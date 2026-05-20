@@ -445,9 +445,10 @@ footer {
 
 .project-screenshots {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 320px));
   gap: 10px;
-  max-width: 720px;
+  width: 100%;
+  max-width: 650px;
   margin: 12px 0;
 }
 
@@ -471,14 +472,17 @@ footer {
   font-size: 14px;
 }
 
-@media (max-width: 560px) {
-  .project-screenshots {
-    grid-template-columns: 1fr;
-  }
-}
 .project-screenshots.single-screenshot {
-  grid-template-columns: minmax(0, 1fr);
-  max-width: 420px;
+  grid-template-columns: minmax(0, 320px);
+  max-width: 320px;
+}
+
+@media (max-width: 560px) {
+  .project-screenshots,
+  .project-screenshots.single-screenshot {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 100%;
+  }
 }
 @media (min-width: 1000px) {
   .project-screenshots img {
