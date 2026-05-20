@@ -1,16 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jovegod | Freelance Data Analyst</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>Hello, I am learning web development</h1>
-    <p>This is my first website using HTML, CSS, JavaScript, Git, and GitHub.</p>
-    <button onclick="sayHello()">Click me</button>
+  <header class="site-header">
+    <a class="logo" href="#top">Jovegod</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#training">Training</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Freelance Data Analyst</p>
+        <h1>I help small businesses turn messy data into clear decisions.</h1>
+        <p class="intro">
+          I create clean spreadsheets, simple dashboards, and practical reports that help business owners understand sales, customers, costs, and performance.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#contact">Work with me</a>
+          <a class="button secondary" href="#projects">View sample work</a>
+        </div>
+      </div>
+
+      <div class="dashboard-preview" aria-label="Sample analytics dashboard preview">
+        <div class="preview-header">
+          <span>Sales Overview</span>
+          <strong>Q2 Report</strong>
+        </div>
+        <div class="metrics-grid">
+          <article>
+            <span>Revenue</span>
+            <strong>$48.2k</strong>
+            <small>+18%</small>
+          </article>
+          <article>
+            <span>Orders</span>
+            <strong>1,284</strong>
+            <small>+11%</small>
+          </article>
+          <article>
+            <span>Profit</span>
+            <strong>$12.7k</strong>
+            <small>+9%</small>
+          </article>
+        </div>
+        <div class="chart-card">
+          <div class="bar-chart" aria-hidden="true">
+            <span style="height: 45%"></span>
+            <span style="height: 62%"></span>
+            <span style="height: 38%"></span>
+            <span style="height: 78%"></span>
+            <span style="height: 55%"></span>
+            <span style="height: 88%"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section-heading">
+        <p class="eyebrow">Services</p>
+        <h2>Useful data work for early clients</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Data Cleaning</h3>
+          <p>Organize raw spreadsheet data, remove duplicates, fix formatting issues, and prepare files for analysis.</p>
+        </article>
+        <article class="card">
+          <h3>Dashboard Setup</h3>
+          <p>Build simple dashboards that track sales, expenses, inventory, customers, or team activity.</p>
+        </article>
+        <article class="card">
+          <h3>Business Reports</h3>
+          <p>Turn numbers into short reports with clear insights, charts, and recommended next steps.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Practical projects and published work</h2>
+      </div>
+      <div class="project-list">
+        <article class="project-item">
+          <span>Power BI</span>
+          <div>
+            <strong>TSA Academy practice project</strong>
+            <h3>TSA Power BI Project</h3>
+            <p>Built a Power BI report as a practical data analytics project while completing TSA Academy training. The project shows dashboard-building practice and business reporting skills.</p>
+          </div>
+        </article>
+        <article class="project-item">
+          <span>Power BI</span>
+          <div>
+            <strong>Movie ranking analysis</strong>
+            <h3>Movie Rank Dashboard</h3>
+            <p>Created a Power BI project focused on movie ranking data, using visuals to compare rankings and present the information in a clearer dashboard format.</p>
+          </div>
+        </article>
+        <article class="project-item">
+          <span>Website</span>
+          <div>
+            <strong>HTML, CSS, GitHub Pages</strong>
+            <h3>Freelance Portfolio Website</h3>
+            <p>Designed and published this personal portfolio to present my data analytics services, training, contact details, and project history.</p>
+          </div>
+        </article>
+        <article class="project-item">
+          <span>GitHub</span>
+          <div>
+            <strong>Git, GitHub, JavaScript</strong>
+            <h3>First Website Project</h3>
+            <p>Built a simple website, connected CSS and JavaScript, saved the work with Git, uploaded it to GitHub, and published it online.</p>
+          </div>
+        </article>
+        <article class="project-item">
+          <span>Next</span>
+          <div>
+            <strong>Excel, Power BI fundamentals, reporting</strong>
+            <h3>More Data Analytics Projects</h3>
+            <p>As I complete more TSA Academy tasks, I will add real dashboards, cleaned datasets, screenshots, and short explanations of the business problem solved.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section skills-section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>Tools and methods I am building around</h2>
+      </div>
+      <div class="skill-tags">
+        <span>Excel</span>
+        <span>Google Sheets</span>
+        <span>Power BI fundamentals</span>
+        <span>SQL basics</span>
+        <span>Data cleaning</span>
+        <span>Charts</span>
+        <span>Reports</span>
+        <span>HTML & CSS</span>
+      </div>
+    </section>
+
+    <section class="section training-section" id="training">
+      <div class="section-heading">
+        <p class="eyebrow">Training</p>
+        <h2>Currently completing data analytics training</h2>
+      </div>
+      <article class="training-card">
+        <div>
+          <h3>TSA Academy Data Analytics Certificate</h3>
+          <p>Certificate expected June 2026. Current focus: spreadsheet analysis, dashboard building, data cleaning, and practical reporting for business decisions.</p>
+        </div>
+        <span>Expected June 2026</span>
+      </article>
+    </section>
+    <section class="contact-section" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Need help understanding your business data?</h2>
+        <p>Email me at 4nnaji@gmail.com with the type of data you have, the problem you want solved, and your deadline.</p>
+      </div>
+      <a class="button primary" href="mailto:4nnaji@gmail.com">4nnaji@gmail.com</a>
+    </section>
   </main>
+
+  <footer>
+    <p>(c) 2026 Jovegod. Freelance Data Analyst.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
+
