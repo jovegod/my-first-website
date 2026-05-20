@@ -282,7 +282,7 @@ h3 {
 
 .project-item {
   display: grid;
-  grid-template-columns: 56px 1fr;
+  grid-template-columns: 90px 1fr;
   gap: 18px;
   align-items: start;
   padding: 22px;
@@ -442,3 +442,40 @@ footer {
 }
 
 
+
+.project-screenshots {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 14px 0;
+}
+
+.project-screenshots img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top left;
+  border: 1px solid #d6cebd;
+  border-radius: 6px;
+  background: #f7f5ef;
+}
+
+.project-note {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: #f7f5ef;
+  border-left: 4px solid #f4c95d;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+@media (max-width: 560px) {
+  .project-screenshots {
+    grid-template-columns: 1fr;
+  }
+}
+.project-screenshots.single-screenshot {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 640px;
+}
