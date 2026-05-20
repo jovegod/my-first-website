@@ -446,16 +446,17 @@ footer {
 .project-screenshots {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-  margin: 14px 0;
+  gap: 10px;
+  max-width: 720px;
+  margin: 12px 0;
 }
 
 .project-screenshots img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  object-position: top left;
+  height: 150px;
+  object-fit: contain;
+  object-position: center;
   border: 1px solid #d6cebd;
   border-radius: 6px;
   background: #f7f5ef;
@@ -477,5 +478,10 @@ footer {
 }
 .project-screenshots.single-screenshot {
   grid-template-columns: minmax(0, 1fr);
-  max-width: 640px;
+  max-width: 420px;
+}
+@media (min-width: 1000px) {
+  .project-screenshots img {
+    height: 170px;
+  }
 }
